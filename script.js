@@ -5,10 +5,10 @@ const scrollDownSection = document.querySelector('.scroll-down');
 
 // mobile menu
 openMenu.addEventListener('click', function (e) {
-  if (menu.style.display === 'none') {
+  if (menu.style.display !== 'flex') {
     menu.style.display = 'flex';
     bars.style.opacity = '0.5';
-  } else {
+  } else if (menu.style.display === 'flex') {
     menu.style.display = 'none';
     bars.style.opacity = '1';
   }
