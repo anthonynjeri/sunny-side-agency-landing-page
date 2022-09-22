@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
-
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -33,38 +33,31 @@
         <div class="logo">
           <img src="/images/logo.svg" alt="sunnyside" />
         </div>
-        <ul class="navitems">
-          <li class="navitem"><a href="">About</a></li>
-          <li class="navitem"><a href="">Services</a></li>
-          <li class="navitem"><a href="">Projects</a></li>
-          <li class=" btn-item"><a href="">Contact</a></li>
-        </ul>
+        
+          <ul class="navitems">
+            <li class="navitem"><a href="">About</a></li>
+            <li class="navitem"><a href="">Services</a></li>
+            <li class="navitem"><a href="">Projects</a></li>
+            <li class=" btn-item"><a href="">Contact</a></li>
+          </ul>
+        <div class="menuhamburger hidden">
+          <i class="fa-solid fa-bars toggle text-white "></i>
+        </div>
       </div>
       <div class="container">
         <div class="hero-text">
           <div class="title">
             <h1>WE ARE CREATIVES</h1>
           </div>
-          <div class="scrolldown">
-            <a href="#">
-              <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
-                <g
-                  stroke="#FFF"
-                  stroke-width="6"
-                  fill="none"
-                  fill-rule="evenodd"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M18 3v100M3 95.484l15 15 15-15" />
-                </g></svg
-            ></a>
+          <div >
+            <a class="scrolldown">
+              <i class="fa-sharp fa-solid fa-arrow-down-long scroll-down text-white" style="font-size: 50px;"></i></a>
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <section class="display-items">
+    <main class="items-on-grid">
+      <section >
         <div class="grid">
           <div class="column text-column column-1">
             <h1 class="lead-title">Transform your brand</h1>

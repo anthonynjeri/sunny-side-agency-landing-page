@@ -124,6 +124,10 @@ img {
   margin-bottom: 96.54px;
 }
 
+.fa-arrow-down-long:hover {
+  color: #ffba02;
+}
+
 section {
   width: 100vw;
 }
@@ -149,6 +153,18 @@ section {
   color: #808397;
   margin-bottom: 40px;
 }
+.text-white {
+  color: white;
+}
+
+i.fa-bars {
+  font-size: 20px;
+}
+i.fa-bars:hover,
+i.fa-bars:active {
+  opacity: 0.5;
+}
+
 .learnmore {
   font-family: 'Fraunces';
   font-style: normal;
@@ -449,6 +465,13 @@ section {
   transition: all ease-in 0.4s;
 }
 
+.menuhamburger {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: auto;
@@ -464,5 +487,40 @@ section {
   }
   .footer-columns {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  ul.navitems {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-width: 329px;
+    margin: auto;
+    height: 329px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+  }
+  ul.navitems .navitem a {
+    color: #808397;
+  }
+  li.btn-item a {
+    background-color: #ffba02;
+  }
+  .btn-item {
+    /* padding-right: 0; */
+    padding: 0 0 0 0;
+  }
+  li.btn-item a:hover {
+    background-color: #ffba02;
+  }
+  .hidden {
+    display: block;
   }
 }
