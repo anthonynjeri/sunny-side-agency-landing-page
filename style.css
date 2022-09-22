@@ -126,6 +126,7 @@ img {
 
 .fa-arrow-down-long:hover {
   color: #ffba02;
+  transition: all ease-in 0.4;
 }
 
 section {
