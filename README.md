@@ -1,94 +1,177 @@
-# Frontend Mentor - Sunnyside agency landing page
+# Sunnyside Agency Landing Page
 
-![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Sunnyside agency landing page](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Overview
 
-Thanks for checking out this front-end coding challenge.
+This is my enhanced solution to the [Sunnyside Agency Landing Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). I created this project while practicing my HTML and CSS skills, and have since significantly enhanced it with modern web development techniques.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## 🚀 Live Demo
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+[View Live Site](https://clinquant-crostata-4d246f.netlify.app/) <!-- Update with your actual live URL -->
 
-## The challenge
+## ✨ Features
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+### Enhanced Styling & Visual Design
 
-This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle. But you could also choose to do this without JS!
+- **Modern CSS Variables**: Consistent theming with custom properties
+- **Glassmorphism Effects**: Backdrop filters and gradient overlays for a contemporary look
+- **Responsive Typography**: Fluid font sizes using `clamp()` for optimal readability
+- **Professional Depth**: Enhanced shadows, gradients, and visual hierarchy
+- **Improved Color Palette**: Cohesive and accessible color scheme
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Mobile-First Responsive Design
 
-Your users should be able to:
+- **Multiple Breakpoints**: Optimized for all screen sizes (576px, 768px, 992px, 1200px, 1400px)
+- **Adaptive Navigation**: Animated mobile menu with smooth transitions
+- **Flexible Grid Layouts**: CSS Grid that adapts seamlessly across devices
+- **Touch-Friendly**: Enhanced touch targets for mobile interaction
+- **Optimized Spacing**: Device-appropriate margins and padding
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+### Advanced Animations & Interactions
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+- **Smooth Hover Effects**: Scale, transform, and color transitions
+- **Interactive Navigation**: Animated underlines and focus states
+- **Scroll Animations**: Fade-in effects for content sections
+- **Micro-Interactions**: Button hover states and icon animations
+- **Performance Optimized**: GPU-accelerated animations with `will-change`
 
-## Where to find everything
+### Accessibility & Performance
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+- **Keyboard Navigation**: Proper focus states and tab order
+- **Reduced Motion Support**: Respects user's motion preferences
+- **Semantic HTML**: Screen reader friendly structure
+- **Fast Loading**: Optimized CSS and images
+- **Progressive Enhancement**: Works without JavaScript
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+## 🛠️ Built With
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- **HTML5**: Semantic markup
+- **CSS3**: Modern features including Grid, Flexbox, Custom Properties
+- **JavaScript**: Vanilla JS for mobile menu functionality
+- **Font Awesome**: Icons for social media and navigation
+- **Google Fonts**: Barlow and Fraunces font families
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+## 🎯 Key Challenges Solved
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+1. **Complex Grid Layout**: Implemented a responsive grid that reorders content appropriately on mobile
+2. **Interactive Navigation**: Created a mobile menu with smooth animations and backdrop blur
+3. **Cross-Browser Compatibility**: Ensured consistent appearance across modern browsers
+4. **Performance Optimization**: Minimized layout shifts and optimized animations
+5. **Accessibility**: Implemented proper focus management and reduced motion support
 
-## Building your project
+## 💡 What I Learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Advanced CSS Grid techniques for complex layouts
+- Modern animation principles and performance optimization
+- Mobile-first responsive design methodologies
+- CSS custom properties for maintainable theming
+- Accessibility best practices for web animations
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## 🔧 Technical Implementation
 
-## Deploying your project
+### CSS Architecture
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+```css
+/* CSS Variables for consistent theming */
+:root {
+  --primary-yellow: #fad400;
+  --primary-cyan: #25564b;
+  --transition-fast: 0.3s ease;
+  --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+/* Modern backdrop filters */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+}
+```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Responsive Design
 
-## Create a custom `README.md`
+```css
+/* Mobile-first approach */
+.title {
+  font-size: clamp(1.5rem, 6vw, 4rem);
+  letter-spacing: clamp(2px, 2vw, 10px);
+}
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Performance Optimizations
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+```css
+/* GPU acceleration for smooth animations */
+.column,
+.testimonial-column {
+  will-change: transform;
+}
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+## 📁 Project Structure
 
-## Submitting your solution
+```
+sunnyside-agency-landing-page/
+├── index.html
+├── style.css
+├── script.js
+├── images/
+│   ├── desktop/
+│   ├── mobile/
+│   └── favicon-32x32.png
+├── design/
+└── README.md
+```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## 🚀 Getting Started
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+1. Clone the repository
 
-## Sharing your solution
+```bash
+git clone https://github.com/anthonynjeri/sunnyside-agency-landing-page.git
+```
 
-There are multiple places you can share your solution:
+2. Open `index.html` in your browser
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+```bash
+open index.html
+```
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+## 📱 Browser Support
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-## Got feedback for us?
+## 🤝 Contributing
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+This is a personal learning project, but feedback and suggestions are always welcome! Feel free to:
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+1. Fork the project
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## 🎨 Design Credits
+
+- Challenge by [Frontend Mentor](https://www.frontendmentor.io)
+- Enhanced and coded by [Anthony Njeri](https://www.anthonynjeri.com)
+
+## 📧 Contact
+
+Anthony Njeri - [hello@anthonynjeri.com](mailto:hello@anthonynjeri.com)
+
+Project Link: [https://github.com/anthonynjeri/sunnyside-agency-landing-page](https://github.com/anthonynjeri/sunnyside-agency-landing-page)
+
+## 🙏 Acknowledgments
+
+- [Frontend Mentor](https://www.frontendmentor.io) for the original challenge
+- [Font Awesome](https://fontawesome.com) for the icons
+- [Google Fonts](https://fonts.google.com) for the typography
+- The web development community for inspiration and best practices
+
+---
 
 **Have fun building!** 🚀
